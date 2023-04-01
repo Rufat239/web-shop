@@ -7,7 +7,7 @@ export const ProductProvider = (props) => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
     axios
-      .get("https://foods-api-4ids.onrender.com/foodsApi")
+      .get("https://mocki.io/v1/d453ab3a-aec9-48de-9d6c-6e186cabbe9d")
       .then((res) => setProducts(res.data));
   }, []);
   return (
